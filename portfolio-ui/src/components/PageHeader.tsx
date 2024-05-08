@@ -6,11 +6,11 @@ const grandHotel = Grand_Hotel({ weight: "400", subsets: ["latin"] });
 
 export default function PageHeader() {
   return (
-    <header className="flex justify-between my-5 px-3 items-center pb-4 border-b-2 border-b-gray-300">
+    <header className="flex justify-between m-5 px-3 items-center border-b-2 border-b-gray-300">
       <div className={`${grandHotel.className} antialiased`}>
-        <span className="text-5xl">Noor <span className="hidden md:inline-block">Mahdi</span></span>
+        <span className="text-5xl">Noor <span className="">Mahdi</span></span>
       </div>
-      <nav className="">
+      <nav className="hidden lg:inline-block">
         <ul className="min-w-[600px] flex justify-between">
           <NavItem>Home</NavItem>
           <NavItem>About</NavItem>
@@ -20,7 +20,7 @@ export default function PageHeader() {
         </ul>
       </nav>
       <a href="tel:+6421502973" className="flex flex-row p-1 items-center">
-        <span>+64 (21) 502 973</span>
+        <span className="text-sm">+64 (21) 502 973</span>
         <span className="bg-white rounded-full shadow-lg ml-2 p-2">
           <PhoneArrowUpRightIcon className="size-5" />
         </span>

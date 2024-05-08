@@ -9,7 +9,7 @@ export default function Badge({
   decoration?: string;
 }) {
   return (
-    <div className="flex flex-col md:flex-row items-center">
+    <div className="flex flex-col md:flex-row items-center px-2">
       <div className="relative">
         {/* bg-gradient-to-tr text-transparent from-red-500 via-green-500 to-blue-500 bg-clip-text inline-block */}
         <h3

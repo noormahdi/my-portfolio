@@ -8,7 +8,7 @@ export default function PageHeader() {
   return (
     <header className="flex justify-between my-5 px-3 items-center pb-4 border-b-2 border-b-gray-300">
       <div className={`${grandHotel.className} antialiased`}>
-        <span className="text-5xl">Noor Mahdi</span>
+        <span className="text-5xl">Noor <span className="hidden md:inline-block">Mahdi</span></span>
       </div>
       <nav className="">
         <ul className="min-w-[600px] flex justify-between">

@@ -13,7 +13,7 @@ export default function HeroShowcase() {
           width={700}
         />
       </div>
-      <div className="flex flex-row 2xl:flex-col justify-around flex-wrap basis-1/5">
+      <div className="flex flex-row 2xl:flex-col justify-around flex-wrap basis-1/5 pt-5">
         <Badge weight="1" description="patent" />
         <Badge weight="14" decoration="+" description="years of experience" />
         <Badge weight="20" decoration="+" description="projects" />

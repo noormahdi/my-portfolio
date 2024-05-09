@@ -25,11 +25,11 @@ export default function TechStack() {
       LogoName: "Node.js + npm",
       Src: `${techStackLogosFolder}/Nodejs_logo.svg`,
     },
-    {
-      LogoName: "Next.js",
-      Src: `${techStackLogosFolder}/Nextjs_Logo.svg`,
-      styles: "invert opacity-25 hover:opacity-100 w-40",
-    },
+    // {
+    //   LogoName: "Next.js",
+    //   Src: `${techStackLogosFolder}/Nextjs_Logo.svg`,
+    //   styles: "invert opacity-25 hover:opacity-100 w-40",
+    // },
     {
       LogoName: "Sass CSS",
       Src: `${techStackLogosFolder}/Sass_Logo_Color.svg`,

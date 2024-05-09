@@ -14,12 +14,12 @@ export default function Home() {
       <main className="flex min-h-screen flex-col max-w-[1920px] mx-auto my-0">
         <section
           id="above-the-fold"
-          className="flex flex-col h-[calc(100vh-80px)]"
+          className="flex flex-col min-h-[calc(100vh-80px)]"
         >
           <PageHeader />
           <div className="flex flex-col md:flex-row justify-between px-5 flex-grow">
-            <div className="content-center basis-1/2">
-              <div className="flex flex-col justify-around">
+            <div className="content-center basis-1/2 flex-grow">
+              <div className="flex flex-col justify-around h-full">
                 <Greeting />
                 <CallToAction className="flex justify-evenly pb-3"/>
               </div>

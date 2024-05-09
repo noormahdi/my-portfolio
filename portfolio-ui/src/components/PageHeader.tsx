@@ -8,7 +8,7 @@ export default function PageHeader() {
   return (
     <header className="flex justify-between m-5 px-3 items-center border-b-2 border-b-gray-300">
       <div className={`${grandHotel.className} antialiased`}>
-        <span className="text-5xl">Noor <span className="">Mahdi</span></span>
+        <span className="text-2xl md:text-5xl">Noor <span className="">Mahdi</span></span>
       </div>
       <nav className="hidden lg:inline-block">
         <ul className="min-w-[600px] flex justify-between">
@@ -20,7 +20,8 @@ export default function PageHeader() {
         </ul>
       </nav>
       <a href="tel:+6421502973" className="flex flex-row p-1 items-center">
-        <span className="text-sm">+64 (21) 502 973</span>
+        <span className="text-sm hidden md:inline-block">+64 (21) 502 973</span>
+        <span className="text-sm inline-block md:hidden">Call me</span>
         <span className="bg-white rounded-full shadow-lg ml-2 p-2">
           <PhoneArrowUpRightIcon className="size-5" />
         </span>

@@ -5,6 +5,7 @@ import PageHeader from "@/components/PageHeader";
 import Greeting from "@/components/Home/AboveTheFold/Greeting";
 import HeroShowcase from "@/components/Home/AboveTheFold/HeroShowcase";
 import CallToAction from "@/components/Home/AboveTheFold/CallToAction";
+import TechStack from "@/components/Home/About/TechStack";
 
 const grandHotel = Grand_Hotel({ weight: "400", subsets: ["latin"] });
 
@@ -29,7 +30,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="h-screen w-full bg-black"></section>
+        <section className="h-screen w-full bg-black">
+          <TechStack/>
+        </section>
       </main>
     </>
   );

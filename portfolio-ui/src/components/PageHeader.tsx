@@ -22,7 +22,7 @@ export default function PageHeader() {
       <a href="tel:+6421502973" className="flex flex-row p-1 items-center">
         <span className="text-sm hidden md:inline-block">+64 (21) 502 973</span>
         <span className="text-sm inline-block md:hidden">Call me</span>
-        <span className="bg-white rounded-full shadow-lg ml-2 p-2">
+        <span className="bg-white dark:bg-gray-700 rounded-full shadow-lg ml-2 p-2">
           <PhoneArrowUpRightIcon className="size-5" />
         </span>
       </a>

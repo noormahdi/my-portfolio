@@ -16,7 +16,7 @@ export function Button({
       {...rest}
       className={clsx(
         "flex h-10 items-center rounded-xl px-4 text-sm font-medium transition-colors",
-        { "bg-red-200 duration-300 hover:bg-blue-200": category == "Primary" },
+        { "bg-red-200 dark:bg-gray-700 duration-300 hover:bg-blue-200 hover:text-black": category == "Primary" },
         {"border border-blue-200 hover:border-red-200": category == "Secondary"},
         className
       )}

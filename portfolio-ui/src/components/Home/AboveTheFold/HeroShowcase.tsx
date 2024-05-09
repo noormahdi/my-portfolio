@@ -5,7 +5,8 @@ export default function HeroShowcase() {
   return (
     <div className="flex flex-col-reverse 2xl:flex-row h-full">
       <div className="basis-4/5 content-end">
-        <Image        
+        <Image
+          className="dark:grayscale"
           layout="intrinsic"
           src="/profile.png"
           alt="Profile picture"

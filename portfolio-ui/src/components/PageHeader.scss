@@ -1,0 +1,30 @@
+#btnBurger,
+#btnBurger::before,
+#btnBurger::after {
+  @apply w-8 h-[2px] bg-black absolute right-0 transition ease-in-out duration-150;
+}
+
+#btnBurger::before,
+#btnBurger::after {
+  content: "";
+}
+
+#btnBurger::before {
+  @apply -translate-y-2;
+}
+
+#btnBurger::after {
+  @apply translate-y-2;
+}
+
+#btnBurger.nav-open {
+  @apply rotate-45;
+}
+
+#btnBurger.nav-open::before {
+  @apply opacity-0;
+}
+
+#btnBurger.nav-open::after {
+  @apply -rotate-90 translate-y-[1px];
+}

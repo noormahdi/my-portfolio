@@ -22,17 +22,12 @@ export default function TechStack() {
       Src: `${techStackLogosFolder}/Angular_React_Vue_Logo.svg`,
     },
     {
-      LogoName: "Node.js + npm",
-      Src: `${techStackLogosFolder}/Nodejs_logo.svg`,
+      LogoName: "Databases",
+      Src: `${techStackLogosFolder}/AzureSQLDatabase.svg`,
     },
-    // {
-    //   LogoName: "Next.js",
-    //   Src: `${techStackLogosFolder}/Nextjs_Logo.svg`,
-    //   styles: "invert opacity-25 hover:opacity-100 w-40",
-    // },
     {
-      LogoName: "Sass CSS",
-      Src: `${techStackLogosFolder}/Sass_Logo_Color.svg`,
+      LogoName: "IaC",
+      Src: `${techStackLogosFolder}/Bicep_Logo.svg`,
     },
     {
       LogoName: "Dockers and containerization",
@@ -52,7 +47,7 @@ export default function TechStack() {
               width={150}
               height={70}
               src={ts.Src}
-              hoverText={ts.LogoName}
+              alt={ts.LogoName}
             />
           </li>
         );

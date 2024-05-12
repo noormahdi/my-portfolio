@@ -5,13 +5,13 @@ export default function Logo({
   height,
   width,
   src,
-  hoverText,
+  alt,
   className,
 }: {
   height: number;
   width: number;
   src: string;
-  hoverText?: string;
+  alt?: string;
   className?: string;
 }) {
   return (
@@ -19,7 +19,7 @@ export default function Logo({
       width={width}
       height={height}
       src={src}
-      alt={hoverText ?? "Logo"}
+      alt={alt ?? "Logo"}
       className={clsx("", className)}
     />
   );

@@ -1,7 +1,7 @@
 #btnBurger,
 #btnBurger::before,
 #btnBurger::after {
-  @apply w-8 h-[2px] bg-black absolute right-0 transition ease-in-out duration-150;
+  @apply w-8 h-[2px] bg-black dark:bg-white absolute right-0 transition ease-in-out duration-150;
 }
 
 #btnBurger::before,

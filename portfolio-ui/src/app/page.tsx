@@ -12,7 +12,7 @@ const grandHotel = Grand_Hotel({ weight: "400", subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col max-w-[1920px] mx-auto my-0">
+      <main className="flex min-h-svh flex-col max-w-[1920px] mx-auto my-0">
         <section
           id="above-the-fold"
           className="flex flex-col min-h-[calc(100vh-80px)]"

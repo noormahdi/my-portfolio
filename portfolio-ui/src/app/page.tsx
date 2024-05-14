@@ -15,7 +15,7 @@ export default function Home() {
       <main className="flex min-h-svh flex-col max-w-[1920px] mx-auto my-0">
         <section
           id="above-the-fold"
-          className="flex flex-col min-h-[calc(100vh-80px)]"
+          className="flex flex-col min-h-[calc(100svh-80px)]"
         >
           <PageHeader />
           <div className="flex flex-col md:flex-row justify-between px-5 flex-grow">

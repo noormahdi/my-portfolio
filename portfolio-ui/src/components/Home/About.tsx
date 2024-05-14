@@ -1,7 +1,17 @@
-import Logo from "@/components/Home/About/Logo";
 import clsx from "clsx";
+import Image from "next/image";
 
-export default function TechStack() {
+export default function About() {
+  return (
+    <section className="h-screen w-full bg-black pt-2">
+      <div className="techstack-header">
+        <TechStack />
+      </div>
+    </section>
+  );
+}
+
+function TechStack() {
   const techStackLogosFolder = "/tech-logos";
   type TechStackLogo = { LogoName: string; Src: string; styles?: string };
   const techStack: TechStackLogo[] = [
@@ -35,7 +45,7 @@ export default function TechStack() {
     },
   ];
   return (
-    <ul className="flex flex-row flex-wrap justify-around mt-3 w-full">
+    <ul className="flex flex-row flex-wrap justify-around w-full">
       {techStack.map((ts, index) => {
         return (
           <li key={index} className="pb-5 mx-2">
@@ -53,5 +63,29 @@ export default function TechStack() {
         );
       })}
     </ul>
+  );
+}
+
+function Logo({
+  height,
+  width,
+  src,
+  alt,
+  className,
+}: {
+  height: number;
+  width: number;
+  src: string;
+  alt?: string;
+  className?: string;
+}) {
+  return (
+    <Image
+      width={width}
+      height={height}
+      src={src}
+      alt={alt ?? "Logo"}
+      className={clsx("", className)}
+    />
   );
 }

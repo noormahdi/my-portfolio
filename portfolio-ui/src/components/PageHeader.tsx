@@ -2,6 +2,7 @@
 import { Grand_Hotel } from "next/font/google";
 import { PhoneArrowUpRightIcon } from "@heroicons/react/24/outline";
 import NavItem from "@/components/Navigation/NavItem";
+import { LogInOut } from "@/components/Auth/AuthLinks";
 import { useState } from "react";
 import clsx from "clsx";
 import "./PageHeader.scss";
@@ -56,6 +57,7 @@ export default function PageHeader() {
             {navMenuLinks()}
           </ul>
         </nav>
+        <LogInOut />        
         <div className="flex">
           <a href="tel:+6421502973" className="flex flex-row p-1 items-center">
             <span className="text-sm hidden md:inline-block">

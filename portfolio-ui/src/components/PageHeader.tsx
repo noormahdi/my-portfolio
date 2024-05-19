@@ -2,7 +2,6 @@
 import { Grand_Hotel } from "next/font/google";
 import { PhoneArrowUpRightIcon } from "@heroicons/react/24/outline";
 import NavItem from "@/components/Navigation/NavItem";
-import { LogInOut } from "@/components/Auth/AuthLinks";
 import { useState } from "react";
 import clsx from "clsx";
 import "./PageHeader.scss";
@@ -46,8 +45,8 @@ export default function PageHeader() {
     });
   return (
     <header>
-      <div className="flex justify-between m-5 items-center border-b-2 border-b-gray-300">
-        <div className={`${grandHotel.className} antialiased`}>
+      <div className="flex justify-between mx-5 items-center border-b-2 border-b-gray-300">
+        <div className={`${grandHotel.className} antialiased pt-1`}>
           <span className="text-2xl md:text-5xl">
             Noor <span className="">Mahdi</span>
           </span>
@@ -57,26 +56,14 @@ export default function PageHeader() {
             {navMenuLinks()}
           </ul>
         </nav>
-        <LogInOut />        
-        <div className="flex">
-          <a href="tel:+6421502973" className="flex flex-row p-1 items-center">
-            <span className="text-sm hidden md:inline-block">
-              +64 (21) 502 973
-            </span>
-            <span className="text-sm inline-block md:hidden">Call me</span>
-            <span className="bg-white dark:bg-gray-700 rounded-full shadow-lg ml-2 p-2">
-              <PhoneArrowUpRightIcon className="size-5" />
-            </span>
-          </a>
-          <div className="lg:hidden flex items-center relative w-9 ml-2">
-            <button
-              id="btnBurger"
-              className={clsx("inline-flex items-center justify-cente", {
-                "nav-open": isClick,
-              })}
-              onClick={toogleNavBar}
-            ></button>
-          </div>
+        <div className="lg:hidden flex items-center relative w-9 ml-2">
+          <button
+            id="btnBurger"
+            className={clsx("inline-flex items-center justify-cente", {
+              "nav-open": isClick,
+            })}
+            onClick={toogleNavBar}
+          ></button>
         </div>
       </div>
       {isClick && (

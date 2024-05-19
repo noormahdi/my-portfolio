@@ -18,7 +18,7 @@ export async function LogInOut() {
 
 export function SignOut() {
   return (
-    <form action={signOutAction}>
+    <form action={signOutAction} className="inline-block underline">
       <button type="submit">Logout</button>
     </form>
   );

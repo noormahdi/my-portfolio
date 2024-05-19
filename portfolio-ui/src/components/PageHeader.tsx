@@ -45,7 +45,7 @@ export default function PageHeader() {
     });
   return (
     <header>
-      <div className="flex justify-between mx-5 items-center border-b-2 border-b-gray-300">
+      <div className="flex justify-between mx-2 items-center border-b-2 border-b-gray-300">
         <div className={`${grandHotel.className} antialiased pt-1`}>
           <span className="text-2xl md:text-5xl">
             Noor <span className="">Mahdi</span>

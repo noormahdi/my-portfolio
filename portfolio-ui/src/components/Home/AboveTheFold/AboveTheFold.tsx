@@ -9,11 +9,11 @@ export default function AboveTheFold() {
   return (
     <section
       id="above-the-fold"
-      className="flex flex-col min-h-[calc(100svh-80px)]"
+      className="flex flex-col min-h-[calc(100svh-60px)]"
     >
       <div className="flex justify-between items-center space-x-2 pr-2 bg-black bg-opacity-5">
         <a href="tel:+6421502973" className="flex flex-row p-1 items-center">
-          <span className="text-sm min-w-[140px] ml-2 md:p-1">
+          <span className="text-sm ml-2 md:p-1 py-1">
             <span className="hidden md:inline-block">Mobile</span>{" "}
             <PhoneArrowUpRightIcon className="size-3 inline-block mr-1" />
             +64 (21) 502 973

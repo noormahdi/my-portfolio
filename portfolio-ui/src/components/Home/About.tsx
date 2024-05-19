@@ -51,7 +51,7 @@ function TechStack() {
           <li key={index} className="pb-5 mx-2">
             <Logo
               className={clsx(
-                "h-[50px] md:h-[65px] w-full grayscale hover:grayscale-0",
+                "h-[25px] md:h-[40px] w-full grayscale hover:grayscale-0",
                 ts.styles
               )}
               width={150}

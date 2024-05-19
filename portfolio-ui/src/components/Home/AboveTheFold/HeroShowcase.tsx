@@ -12,6 +12,7 @@ export default function HeroShowcase() {
           alt="Profile picture"
           height={700}
           width={700}
+          priority
         />
       </div>
       <div className="hidden md:flex flex-row 2xl:flex-col justify-around flex-wrap basis-1/5 pt-5">

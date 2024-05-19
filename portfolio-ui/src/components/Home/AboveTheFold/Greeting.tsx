@@ -1,7 +1,7 @@
 export default function Greeting() {
   return (
     <div>
-      <h1 className="text-3xl md:text-5xl lg:text-6xl md:py-5 text-center">
+      <h1 className="text-3xl md:text-5xl lg:text-6xl pt-2 md:py-5 text-center">
         👋 <span lang="mi">Kia Ora</span>, <span className="font-extrabold bg-blue-200 dark:bg-gray-700 rounded-lg px-1">I&apos;m Noor</span>
       </h1>
       <h2 className="text-2xl md:text-4xl py-5 text-center">
